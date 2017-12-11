@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+//android配置
+def config = rootProject.ext
+android {
+    compileSdkVersion config.android.compileSdkVersion
+    buildToolsVersion config.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.android.minSdkVersion
+        targetSdkVersion config.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    kapt "com.google.dagger:dagger-compiler:${config.dependencies.dagger}"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    api "com.android.support:appcompat-v7:${config.supportLibrary}"
+    api "com.android.support:recyclerview-v7:${config.supportLibrary}"
+    api "com.google.dagger:dagger:${config.dependencies.dagger}"
+    api ('com.alibaba:arouter-api:1.2.4') { exclude module: 'support-v4' }
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'com.squareup.retrofit2:retrofit:2.2.0'
+    api 'com.squareup.retrofit2:converter-gson:2.2.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    api 'com.squareup.okhttp3:okhttp:3.8.0'
+    api 'io.reactivex.rxjava2:rxjava:2.0.5'
+    api 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    // RxLifecycle
+    api 'com.trello.rxlifecycle2:rxlifecycle:2.0.1'
+    api 'com.trello.rxlifecycle2:rxlifecycle-android:2.0.1'
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.0.1'
+
+    api 'com.zhy:base-rvadapter:3.0.3'
+    api 'org.greenrobot:greendao:3.2.2'
+    api 'org.greenrobot:eventbus:3.0.0'
+}
+repositories {
+    mavenCentral()
+}

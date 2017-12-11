@@ -1,0 +1,7 @@
+<resources>
+    <string name="base_server_error">服务器访问失败</string>
+    <string name="base_access_fail">访问失败</string>
+    <string name="base_connect_error">连接出错</string>
+    <string name="base_connect_overtime">连接超时</string>
+    <string name="base_check_network_setting">请检查您的网络设置</string>
+</resources>
