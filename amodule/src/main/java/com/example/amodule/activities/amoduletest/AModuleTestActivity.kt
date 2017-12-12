@@ -1,9 +1,9 @@
-package com.example.amodule.activities.amodule_test
+package com.example.amodule.activities.amoduletest
 
 import android.os.Bundle
 import com.alibaba.android.arouter.launcher.ARouter
-
 import com.example.amodule.R
+
 import com.kun.basekotlin.dagger.DaggerAmoduleComponent
 
 import com.kun.baselib.base.BaseActivity

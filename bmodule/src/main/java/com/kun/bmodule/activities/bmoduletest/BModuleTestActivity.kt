@@ -1,4 +1,4 @@
-package com.kun.bmodule.activities.bmodule_test
+package com.kun.bmodule.activities.bmoduletest
 
 import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route

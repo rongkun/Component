@@ -4,7 +4,7 @@
 
     <application>
         <activity
-            android:name=".activities.bmodule_test.BModuleTestActivity"
+            android:name=".activities.bmoduletest.BModuleTestActivity"
             android:theme="@style/AppTheme"></activity>
     </application>
 

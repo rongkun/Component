@@ -1,6 +1,6 @@
 package com.kun.basekotlin.dagger
 
-import com.example.amodule.activities.amodule_test.AModuleTestActivity
+import com.example.amodule.activities.amoduletest.AModuleTestActivity
 import com.kun.baselib.dagger.AppComponent
 import com.kun.baselib.dagger.PerView
 import dagger.Component

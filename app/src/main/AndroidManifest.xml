@@ -3,7 +3,7 @@
     package="com.kun.componentdemo">
 
     <application
-        android:name=".ComponentApplication"
+        android:name="com.kun.baselib.base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

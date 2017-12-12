@@ -1,4 +1,4 @@
-package com.example.amodule.activities.amodule_test
+package com.example.amodule.activities.amoduletest
 
 import javax.inject.Inject
 import com.kun.baselib.base.BasePresenter

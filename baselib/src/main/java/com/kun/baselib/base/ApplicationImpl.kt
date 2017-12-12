@@ -5,5 +5,5 @@ package com.kun.baselib.base
  * @date 2017/12/11
  */
 interface ApplicationImpl{
-    fun onLoad(application: BaseApplication)
+    fun onCreate(application: BaseApplication)
 }

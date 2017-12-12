@@ -2,7 +2,7 @@ package com.kun.basekotlin.dagger
 
 import com.kun.baselib.dagger.AppComponent
 import com.kun.baselib.dagger.PerView
-import com.kun.bmodule.activities.bmodule_test.BModuleTestActivity
+import com.kun.bmodule.activities.bmoduletest.BModuleTestActivity
 import dagger.Component
 
 /**

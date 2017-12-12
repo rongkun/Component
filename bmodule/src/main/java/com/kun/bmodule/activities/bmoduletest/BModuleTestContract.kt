@@ -1,8 +1,8 @@
-package com.example.amodule.activities.amodule_test
+package com.kun.bmodule.activities.bmoduletest
 
 import com.kun.baselib.base.BaseActivityView
 
-class AModuleTestContract {
+class BModuleTestContract {
     interface View : BaseActivityView {
 
     }

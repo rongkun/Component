@@ -42,6 +42,10 @@ dependencies {
     })
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     kapt "com.alibaba:arouter-compiler:${config.dependencies.arouter}"
-    implementation project(':amodule')
-    implementation project(':bmodule')
+    if(isModule.toBoolean()) {
+        implementation project(':baselib')
+    }else {
+        implementation project(':amodule')
+        implementation project(':bmodule')
+    }
 }

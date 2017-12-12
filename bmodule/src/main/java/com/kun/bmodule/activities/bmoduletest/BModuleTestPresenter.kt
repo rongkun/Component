@@ -1,4 +1,4 @@
-package com.kun.bmodule.activities.bmodule_test
+package com.kun.bmodule.activities.bmoduletest
 
 import javax.inject.Inject
 import com.kun.baselib.base.BasePresenter
